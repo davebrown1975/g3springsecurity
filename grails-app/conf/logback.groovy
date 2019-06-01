@@ -32,5 +32,9 @@ if (Environment.isDevelopmentMode() && targetDir != null) {
         }
     }
     logger("StackTrace", ERROR, ['FULL_STACKTRACE'], false)
+    logger 'grails.app', DEBUG, ['STDOUT'], false
+    logger 'com.tucanoo', DEBUG, ['STDOUT'], false
 }
 root(ERROR, ['STDOUT'])
+logger 'grails.plugin.springsecurity.web.filter.DebugFilter', TRACE, ['STDOUT'], false
+logger 'grails.plugin.springsecurity', DEBUG, ['STDOUT'], false

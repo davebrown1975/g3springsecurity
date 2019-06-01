@@ -1,4 +1,4 @@
-package g3springsec
+package com.tucanoo.springsec
 
 class UrlMappings {
 
@@ -9,7 +9,7 @@ class UrlMappings {
             }
         }
 
-        "/"(view:"/index")
+        "/"(controller:"index")
         "500"(view:'/error')
         "404"(view:'/notFound')
     }

@@ -2,7 +2,7 @@
 grails:
     profile: web
     codegen:
-        defaultPackage: g3springsec
+        defaultPackage: com.tucanoo.springsec
     gorm:
         reactor:
             # Whether to translate GORM events into Reactor events
